@@ -76,8 +76,13 @@
   font-weight: 600;
   line-height: normal;
 }
+@media screen and (max-width: 375px){
+    .container {
+        padding-left: 30px;
+      }   
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .disserts_list {
     display: block;
     width: 100%;
@@ -95,7 +100,12 @@
     margin-top: 2.4rem;
   }
   .container {
-    padding-left: 50px;
-  }
+    padding-left: 80px;
+  }   
+}
+@media screen and (max-width: 375px){
+    .container {
+        padding-left: 30px;
+      }   
 }
 
