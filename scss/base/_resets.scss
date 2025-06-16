@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
