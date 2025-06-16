@@ -77,7 +77,7 @@
   line-height: normal;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   .disserts_list {
     display: block;
     width: 100%;
@@ -93,6 +93,9 @@
   }
   .title {
     margin-top: 2.4rem;
+  }
+  .container {
+    padding-left: 80px;
   }
 }
 
