@@ -1,0 +1,98 @@
+.disserts {
+  margin-top: 8.8rem;
+}
+.title {
+  color: var(--color-rose-900, #260f08);
+  font-family: "Red Hat Text";
+  font-size: var(--font-size-text-preset-1, 40px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; 
+  margin-bottom: 3.2rem;
+}
+.disserts_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  width: 80rem;
+}
+.disserts_item {
+  position: relative;
+}
+.disserts_img {
+}
+.btn {
+}
+.btnAdd {
+  position: absolute;
+  margin-top: -22px;
+  margin-left: 4.5rem;
+  display: flex;
+  width: 16rem;
+  max-width: 16rem;
+  padding: var(--spacing-150, 1.2rem);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  border-radius: 999px;
+  border: 1px solid var(--color-rose-400, #ad8a85);
+  background: var(--color-white, #fff);
+
+  color: var(--color-rose-900, #260f08);
+  font-family: "Red Hat Text";
+  font-size: var(--font-size-text-preset-4, 14px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.imgs {
+  width: 20px;
+  height: 20px;
+}
+.desserts_name {
+  margin-top: 3.8rem;
+  color: var(--color-rose-500, #87635a);
+  font-family: "Red Hat Text";
+  font-size: var(--font-size-text-preset-4, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.4rem;
+}
+.desserts_title {
+  color: #260f08;
+  font-family: "Red Hat Text";
+  font-size: var(--spacing-200, 16px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.4rem;
+}
+.disserts_price {
+  color: var(--color-red, #c73b0f);
+  font-family: "Red Hat Text";
+  font-size: var(--spacing-200, 16px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media screen and (max-width: 375px) {
+  .disserts_list {
+    display: block;
+    width: 100%;
+  }
+  .disserts_img {
+    width: 327px;
+  }
+  .btnAdd {
+    margin-left: 8.3rem;
+  }
+  .disserts_item {
+    margin-bottom: 2.4rem;
+  }
+  .title {
+    margin-top: 2.4rem;
+  }
+}
+
