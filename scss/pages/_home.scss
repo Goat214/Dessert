@@ -24,6 +24,8 @@
     border-radius: var(--spacing-100, 8px);
     border: 2px solid var(--color-red, #c73b0f);
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    transition:0.3s;
+
     .btnAdd {
       display: flex;
       width: 160px;
