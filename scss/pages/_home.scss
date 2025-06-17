@@ -1,5 +1,5 @@
 .disserts {
-  margin-top: 8.8rem;
+  margin-right: 32px;
 }
 .title {
   color: var(--color-rose-900, #260f08);
@@ -7,7 +7,7 @@
   font-size: var(--font-size-text-preset-1, 40px);
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; 
+  line-height: 120%;
   margin-bottom: 3.2rem;
 }
 .disserts_list {
@@ -20,6 +20,21 @@
   position: relative;
 }
 .disserts_img {
+  &:hover {
+    border-radius: var(--spacing-100, 8px);
+    border: 2px solid var(--color-red, #c73b0f);
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    .btnAdd {
+      display: flex;
+      width: 160px;
+      max-width: 160px;
+      padding: var(--spacing-150, 12px);
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 999px;
+      background: var(--color-red, #c73b0f);
+    }
+  }
 }
 .btn {
 }
@@ -76,13 +91,178 @@
   font-weight: 600;
   line-height: normal;
 }
-@media screen and (max-width: 375px){
-    .container {
-        padding-left: 30px;
-      }   
+
+.content {
+  display: flex;
+  margin-top: 8.8rem;
+}
+
+.basket {
+  display: flex;
+  width: 384px;
+  padding: var(--spacing-300, 24px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300, 24px);
+  border-radius: var(--spacing-150, 12px);
+  background: var(--color-white, #fff);
+  height: 54.2rem;
+}
+.basket_title {
+  color: var(--color-red, #c73b0f);
+  font-family: "Red Hat Text";
+  font-size: var(--font-size-text-preset-2, 24px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.basket_img {
+  width: 128px;
+  height: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.basket_info {
+  color: var(--color-rose-500, #87635a);
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Red Hat Text";
+  font-size: var(--font-size-text-preset-4, 14px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.count {
+  color: var(--color-rose-900, #260f08);
+
+  /* text-preset-4-bold */
+  font-family: "Red Hat Text";
+  font-size: var(--font-size-text-preset-4, 14px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.wrapper {
+  display: flex;
+}
+.item_name {
+  color: var(--color-red, #c73b0f);
+
+  /* text-preset-4-bold */
+  font-family: "Red Hat Text";
+  font-size: var(--font-size-text-preset-4, 14px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 0.8rem;
+}
+.realPrice {
+  color: var(--color-rose-500, #87635a);
+
+  /* text-preset-4 */
+  font-family: "Red Hat Text";
+  font-size: var(--font-size-text-preset-4, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 8px;
+}
+.owerPrice {
+  color: var(--color-rose-500, #87635a);
+
+  /* text-preset-4-bold */
+  font-family: "Red Hat Text";
+  font-size: var(--font-size-text-preset-4, 14px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Order_Total {
+ display: flex;
+  justify-content: space-between;
+  width: 100%;
+  p {
+    color: var(--color-rose-900, #260f08);
+    font-family: "Red Hat Text";
+    font-size: var(--font-size-text-preset-4, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+  }
+  h3 {
+    
+    color: var(--color-rose-900, #260f08);
+    font-family: "Red Hat Text";
+    font-size: var(--font-size-text-preset-2, 24px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.end {
+display: flex;
+
+padding: var(--spacing-200, 16px);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: var(--spacing-300, 24px);
+align-self: stretch;
+border-radius: var(--spacing-100, 8px);
+background: var(--color-rose-50, #FCF8F6);
+color: var(--color-rose-900, #260F08);
+
+
+
+font-family: "Red Hat Text";
+font-size: var(--font-size-text-preset-4, 14px);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+hr{ 
+    max-width: 400px;
+    width: 100%;
+    margin-top: 1.6rem;
+}
+.btnn {
+    display: flex;
+padding: var(--spacing-200, 16px) var(--spacing-300, 24px);
+justify-content: center;
+align-items: center;
+gap: var(--spacing-100, 8px);
+align-self: stretch;
+border-radius: 999px;
+background: var(--color-red, #C73B0F);
+color: var(--color-white, #FFF);
+
+/* text-preset-3 */
+font-family: "Red Hat Text";
+font-size: var(--spacing-200, 16px);
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+@media screen and (max-width: 1240px) {
+    
+    .basket{
+        margin-top: 3.2rem;
+        width: 100%;
+        
+    }
+  .content{
+    display: block;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .content {
+    display: block;
+  }
   .disserts_list {
     display: block;
     width: 100%;
@@ -101,11 +281,16 @@
   }
   .container {
     padding-left: 80px;
-  }   
+  }
 }
-@media screen and (max-width: 375px){
-    .container {
-        padding-left: 30px;
-      }   
+@media screen and (max-width: 375px) {
+  .container {
+    padding-left: 30px;
+  }
+  .basket{
+    width: 327px;
+  }
+  hr{
+    width: 285px;
+  }
 }
-

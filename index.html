@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dessert</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container content">
       <div class="disserts">
         <h1 class="title">Desserts</h1>
         <ul class="disserts_list gird gird-col-2">
           <li class="disserts_item">
             <img
+           
               class="disserts_img"
               src="./img/Waffle-with-Berries.jpg"
               alt=""
             />
-            <button class="btn btnAdd">
+            <button id="waffle" data-id="waffle"  class="btn btnAdd">
               <img
                 class="imgs"
                 src="./img/carbon_shopping-cart-plus.svg"
@@ -36,7 +37,7 @@
               src="./img/Vanilla-Bean-Creme-Brulee.jpg"
               alt=""
             />
-            <button class="btn btnAdd">
+            <button id="waffle" data-id="brulle"  class="btn btnAdd">
               <img
                 class="imgs"
                 src="./img/carbon_shopping-cart-plus.svg"
@@ -54,7 +55,7 @@
               src="./img/Macaron.jpg"
               alt=""
             />
-            <button class="btn btnAdd">
+            <button data-id="Macaron" class="btn btnAdd">
               <img
                 class="imgs"
                 src="./img/carbon_shopping-cart-plus.svg"
@@ -72,7 +73,7 @@
               src="./img/Tiramisu.jpg"
               alt=""
             />
-            <button class="btn btnAdd">
+            <button data-id="Tiramisu" class="btn btnAdd">
               <img
                 class="imgs"
                 src="./img/carbon_shopping-cart-plus.svg"
@@ -90,7 +91,7 @@
               src="./img/Baklava.jpg"
               alt=""
             />
-            <button class="btn btnAdd">
+            <button data-id="Baklava" class="btn btnAdd">
               <img
                 class="imgs"
                 src="./img/carbon_shopping-cart-plus.svg"
@@ -108,7 +109,7 @@
               src="./img/Pie.jpg"
               alt=""
             />
-            <button class="btn btnAdd">
+            <button data-id="Pie" class="btn btnAdd">
               <img
                 class="imgs"
                 src="./img/carbon_shopping-cart-plus.svg"
@@ -126,7 +127,7 @@
               src="./img/Cake.jpg"
               alt=""
             />
-            <button class="btn btnAdd">
+            <button data-id="Cake" class="btn btnAdd">
               <img
                 class="imgs"
                 src="./img/carbon_shopping-cart-plus.svg"
@@ -144,12 +145,13 @@
               src="./img/Brownie.jpg"
               alt=""
             />
-            <button class="btn btnAdd">
+            <button data-id="Brownie" class="btn btnAdd">
               <img
                 class="imgs"
                 src="./img/carbon_shopping-cart-plus.svg"
                 alt=""
               />
+           
               Add to Cart
             </button>
             <p class="desserts_name">Brownie</p>
@@ -176,7 +178,12 @@
           </li>
         </ul>
       </div>
-      <div class="basket"></div>
+      <div class="basket">
+        <h2 class="basket_title">Your Cart (0)</h2>
+        <img class="basket_img" src="./img/Empty-Illustration.svg" alt="">
+        <p class="basket_info">Your added items will appear here</p>
+      </div>
     </div>
+    <script  src="./js/app.js"></script>
   </body>
 </html>
